@@ -1,0 +1,39 @@
+[2024-05-05T05:20:36.586+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-05T05:20:36.607+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mysql_table_dump.mysql_table_dump_task manual__2024-05-05T05:19:33.220872+00:00 [queued]>
+[2024-05-05T05:20:36.614+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mysql_table_dump.mysql_table_dump_task manual__2024-05-05T05:19:33.220872+00:00 [queued]>
+[2024-05-05T05:20:36.615+0000] {taskinstance.py:2303} INFO - Starting attempt 2 of 2
+[2024-05-05T05:20:36.632+0000] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): mysql_table_dump_task> on 2024-05-05 05:19:33.220872+00:00
+[2024-05-05T05:20:36.636+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=73) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-05T05:20:36.637+0000] {standard_task_runner.py:63} INFO - Started process 74 to run task
+[2024-05-05T05:20:36.637+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'mysql_table_dump', 'mysql_table_dump_task', 'manual__2024-05-05T05:19:33.220872+00:00', '--job-id', '51', '--raw', '--subdir', 'DAGS_FOLDER/dump_load_dag.py', '--cfg-path', '/tmp/tmpgi4bjqmt']
+[2024-05-05T05:20:36.639+0000] {standard_task_runner.py:91} INFO - Job 51: Subtask mysql_table_dump_task
+[2024-05-05T05:20:36.683+0000] {task_command.py:426} INFO - Running <TaskInstance: mysql_table_dump.mysql_table_dump_task manual__2024-05-05T05:19:33.220872+00:00 [running]> on host 284b5f341ead
+[2024-05-05T05:20:36.748+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='mysql_table_dump' AIRFLOW_CTX_TASK_ID='mysql_table_dump_task' AIRFLOW_CTX_EXECUTION_DATE='2024-05-05T05:19:33.220872+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-05T05:19:33.220872+00:00'
+[2024-05-05T05:20:36.749+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-05T05:20:36.759+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-05-05T05:20:36.761+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'mysqldump -u root -pmysql@123 -h localhost practise customers > /opt/***/dags/dump_file.sql']
+[2024-05-05T05:20:36.767+0000] {subprocess.py:86} INFO - Output:
+[2024-05-05T05:20:36.774+0000] {subprocess.py:93} INFO - mysqldump: Got error: 2002: "Can't connect to local server through socket '/run/mysqld/mysqld.sock' (2)" when trying to connect
+[2024-05-05T05:20:36.775+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2024-05-05T05:20:36.776+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-05T05:20:36.786+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2024-05-05T05:20:36.790+0000] {taskinstance.py:1205} INFO - Marking task as FAILED. dag_id=mysql_table_dump, task_id=mysql_table_dump_task, execution_date=20240505T051933, start_date=20240505T052036, end_date=20240505T052036
+[2024-05-05T05:20:36.803+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 51 for task mysql_table_dump_task (Bash command failed. The command returned a non-zero exit code 2.; 74)
+[2024-05-05T05:20:36.812+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-05-05T05:20:36.825+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-05T05:20:36.828+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
