@@ -1,0 +1,1 @@
+[2024-05-05T03:33:42.821+0000] {task_context_logger.py:104} ERROR - Executor reports task instance <TaskInstance: bash.run_after_loop manual__2024-05-05T03:33:41.572808+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
