@@ -1,0 +1,7 @@
+[debug] not up to date. inChanged = true, force = false
+[debug] Updating ...
+[warn] Attempt 1 failed: lmcoursier.internal.shaded.coursier.error.ResolutionError$CantDownloadModule: Error downloading org.scala-lang:tasty-core_3:3.3.3
+[warn]   Not found
+[warn]   not found: C:\Users\Dell\.ivy2\localorg.scala-lang\tasty-core_3\3.3.3\ivys\ivy.xml
+[warn]   download error: Caught java.net.ConnectException (Connection timed out: connect) while downloading https://repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.3.3/tasty-core_3-3.3.3.pom
+[debug] Done updating 

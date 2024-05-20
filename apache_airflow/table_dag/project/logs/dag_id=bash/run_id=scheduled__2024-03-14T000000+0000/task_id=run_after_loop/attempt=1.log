@@ -1,0 +1,49 @@
+[2024-05-05T03:18:32.136+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-05T03:18:32.157+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bash.run_after_loop scheduled__2024-03-14T00:00:00+00:00 [queued]>
+[2024-05-05T03:18:32.165+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bash.run_after_loop scheduled__2024-03-14T00:00:00+00:00 [queued]>
+[2024-05-05T03:18:32.166+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2024-05-05T03:18:32.181+0000] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): run_after_loop> on 2024-03-14 00:00:00+00:00
+[2024-05-05T03:18:32.186+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=77) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-05T03:18:32.188+0000] {standard_task_runner.py:63} INFO - Started process 78 to run task
+[2024-05-05T03:18:32.187+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'bash', 'run_after_loop', 'scheduled__2024-03-14T00:00:00+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/bash_dag.py', '--cfg-path', '/tmp/tmpik46jks7']
+[2024-05-05T03:18:32.190+0000] {standard_task_runner.py:91} INFO - Job 14: Subtask run_after_loop
+[2024-05-05T03:18:32.242+0000] {task_command.py:426} INFO - Running <TaskInstance: bash.run_after_loop scheduled__2024-03-14T00:00:00+00:00 [running]> on host 284b5f341ead
+[2024-05-05T03:18:32.329+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='bash' AIRFLOW_CTX_TASK_ID='run_after_loop' AIRFLOW_CTX_EXECUTION_DATE='2024-03-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-14T00:00:00+00:00'
+[2024-05-05T03:18:32.330+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-05T03:18:32.353+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-05-05T03:18:32.355+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'ls']
+[2024-05-05T03:18:32.363+0000] {subprocess.py:86} INFO - Output:
+[2024-05-05T03:18:32.367+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-05-05T03:18:32.369+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-05T03:18:32.394+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=bash, task_id=run_after_loop, execution_date=20240314T000000, start_date=20240505T031832, end_date=20240505T031832
+[2024-05-05T03:18:32.443+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-05T03:18:32.460+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-05T03:18:32.464+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-05-05T03:28:54.851+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-05T03:28:54.871+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bash.run_after_loop scheduled__2024-03-14T00:00:00+00:00 [queued]>
+[2024-05-05T03:28:54.879+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bash.run_after_loop scheduled__2024-03-14T00:00:00+00:00 [queued]>
+[2024-05-05T03:28:54.880+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2024-05-05T03:28:54.893+0000] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): run_after_loop> on 2024-03-14 00:00:00+00:00
+[2024-05-05T03:28:54.898+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=48) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-05T03:28:54.900+0000] {standard_task_runner.py:63} INFO - Started process 49 to run task
+[2024-05-05T03:28:54.899+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'bash', 'run_after_loop', 'scheduled__2024-03-14T00:00:00+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/bash_dag.py', '--cfg-path', '/tmp/tmpru7rfw1c']
+[2024-05-05T03:28:54.902+0000] {standard_task_runner.py:91} INFO - Job 21: Subtask run_after_loop
+[2024-05-05T03:28:54.948+0000] {task_command.py:426} INFO - Running <TaskInstance: bash.run_after_loop scheduled__2024-03-14T00:00:00+00:00 [running]> on host 284b5f341ead
+[2024-05-05T03:28:55.031+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='bash' AIRFLOW_CTX_TASK_ID='run_after_loop' AIRFLOW_CTX_EXECUTION_DATE='2024-03-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-14T00:00:00+00:00'
+[2024-05-05T03:28:55.032+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-05T03:28:55.043+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-05-05T03:28:55.044+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'curl -o thatpage.html http://www.example.com/']
+[2024-05-05T03:28:55.051+0000] {subprocess.py:86} INFO - Output:
+[2024-05-05T03:28:55.058+0000] {subprocess.py:93} INFO -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+[2024-05-05T03:28:55.059+0000] {subprocess.py:93} INFO -                                  Dload  Upload   Total   Spent    Left  Speed
+[2024-05-05T03:28:55.555+0000] {subprocess.py:93} INFO -   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  1256  100  1256    0     0   2526      0 --:--:-- --:--:-- --:--:--  2527
+[2024-05-05T03:28:55.557+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-05-05T03:28:55.559+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-05T03:28:55.587+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=bash, task_id=run_after_loop, execution_date=20240314T000000, start_date=20240505T032854, end_date=20240505T032855
+[2024-05-05T03:28:55.639+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-05T03:28:55.653+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-05T03:28:55.662+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

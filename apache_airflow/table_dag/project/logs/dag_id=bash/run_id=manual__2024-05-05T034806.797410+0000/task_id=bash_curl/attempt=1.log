@@ -1,0 +1,26 @@
+[2024-05-05T03:48:07.995+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-05T03:48:08.017+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bash.bash_curl manual__2024-05-05T03:48:06.797410+00:00 [queued]>
+[2024-05-05T03:48:08.026+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bash.bash_curl manual__2024-05-05T03:48:06.797410+00:00 [queued]>
+[2024-05-05T03:48:08.027+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2024-05-05T03:48:08.043+0000] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): bash_curl> on 2024-05-05 03:48:06.797410+00:00
+[2024-05-05T03:48:08.052+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=181) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-05T03:48:08.054+0000] {standard_task_runner.py:63} INFO - Started process 182 to run task
+[2024-05-05T03:48:08.054+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'bash', 'bash_curl', 'manual__2024-05-05T03:48:06.797410+00:00', '--job-id', '35', '--raw', '--subdir', 'DAGS_FOLDER/bash_dag.py', '--cfg-path', '/tmp/tmpknzql3a_']
+[2024-05-05T03:48:08.057+0000] {standard_task_runner.py:91} INFO - Job 35: Subtask bash_curl
+[2024-05-05T03:48:08.111+0000] {task_command.py:426} INFO - Running <TaskInstance: bash.bash_curl manual__2024-05-05T03:48:06.797410+00:00 [running]> on host 284b5f341ead
+[2024-05-05T03:48:08.197+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='bash' AIRFLOW_CTX_TASK_ID='bash_curl' AIRFLOW_CTX_EXECUTION_DATE='2024-05-05T03:48:06.797410+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-05T03:48:06.797410+00:00'
+[2024-05-05T03:48:08.198+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-05T03:48:08.211+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-05-05T03:48:08.213+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'curl -o xrate.csv "https://data-api.ecb.europa.eu/service/data/EXR/M.USD.EUR.SP00.A?format=csvdata"']
+[2024-05-05T03:48:08.220+0000] {subprocess.py:86} INFO - Output:
+[2024-05-05T03:48:08.227+0000] {subprocess.py:93} INFO -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+[2024-05-05T03:48:08.228+0000] {subprocess.py:93} INFO -                                  Dload  Upload   Total   Spent    Left  Speed
+[2024-05-05T03:48:09.818+0000] {subprocess.py:93} INFO -   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100 53823    0 53823    0     0  33823      0 --:--:--  0:00:01 --:--:-- 33829
+[2024-05-05T03:48:09.820+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-05-05T03:48:09.822+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-05T03:48:09.845+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=bash, task_id=bash_curl, execution_date=20240505T034806, start_date=20240505T034808, end_date=20240505T034809
+[2024-05-05T03:48:09.881+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-05T03:48:09.897+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-05T03:48:09.901+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

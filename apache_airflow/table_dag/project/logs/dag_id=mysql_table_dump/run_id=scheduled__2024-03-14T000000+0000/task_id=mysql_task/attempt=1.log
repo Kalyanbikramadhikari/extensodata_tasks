@@ -1,0 +1,29 @@
+[2024-05-08T04:28:25.364+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-08T04:28:25.441+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mysql_table_dump.mysql_task scheduled__2024-03-14T00:00:00+00:00 [queued]>
+[2024-05-08T04:28:25.453+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mysql_table_dump.mysql_task scheduled__2024-03-14T00:00:00+00:00 [queued]>
+[2024-05-08T04:28:25.454+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 1
+[2024-05-08T04:28:25.472+0000] {taskinstance.py:2327} INFO - Executing <Task(MySqlOperator): mysql_task> on 2024-03-14 00:00:00+00:00
+[2024-05-08T04:28:25.481+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'mysql_table_dump', 'mysql_task', 'scheduled__2024-03-14T00:00:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/dump_load_dag.py', '--cfg-path', '/tmp/tmp0p1m8eoj']
+[2024-05-08T04:28:25.487+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=408) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-05-08T04:28:25.489+0000] {standard_task_runner.py:91} INFO - Job 5: Subtask mysql_task
+[2024-05-08T04:28:25.489+0000] {standard_task_runner.py:63} INFO - Started process 409 to run task
+[2024-05-08T04:28:25.550+0000] {task_command.py:426} INFO - Running <TaskInstance: mysql_table_dump.mysql_task scheduled__2024-03-14T00:00:00+00:00 [running]> on host 60e0adda864f
+[2024-05-08T04:28:25.696+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='mysql_table_dump' AIRFLOW_CTX_TASK_ID='mysql_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-14T00:00:00+00:00'
+[2024-05-08T04:28:25.698+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-08T04:28:25.781+0000] {sql.py:276} INFO - Executing: 
+    CREATE TABLE Kalyan(
+        name varchar(255)
+    );
+[2024-05-08T04:28:25.799+0000] {base.py:84} INFO - Using connection ID 'conid' for task execution.
+[2024-05-08T04:28:25.824+0000] {base.py:84} INFO - Using connection ID 'conid' for task execution.
+[2024-05-08T04:28:25.978+0000] {sql.py:457} INFO - Running statement: 
+    CREATE TABLE Kalyan(
+        name varchar(255)
+    );, parameters: None
+[2024-05-08T04:28:26.057+0000] {sql.py:466} INFO - Rows affected: 0
+[2024-05-08T04:28:26.063+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/providers/common/sql/hooks/sql.py:407 AirflowProviderDeprecationWarning: Call to deprecated method _make_common_data_structure. (The `_make_serializable` method is deprecated and support will be removed in a future version of the common.sql provider. Please update the DbApiHook's provider to a version based on common.sql >= 1.9.1.)
+[2024-05-08T04:28:26.067+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-08T04:28:26.080+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=mysql_table_dump, task_id=mysql_task, execution_date=20240314T000000, start_date=20240508T042825, end_date=20240508T042826
+[2024-05-08T04:28:26.108+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-08T04:28:26.128+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-08T04:28:26.132+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
