@@ -1,0 +1,128 @@
+[2024-05-27T10:37:49.619+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-27T10:37:49.674+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: entity_match_dag.load_task scheduled__2023-01-01T00:00:00+00:00 [queued]>
+[2024-05-27T10:37:49.687+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: entity_match_dag.load_task scheduled__2023-01-01T00:00:00+00:00 [queued]>
+[2024-05-27T10:37:49.689+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-27T10:37:49.710+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_task> on 2023-01-01 00:00:00+00:00
+[2024-05-27T10:37:49.805+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'entity_match_dag', 'load_task', 'scheduled__2023-01-01T00:00:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/entity_match_dag.py', '--cfg-path', '/tmp/tmplk67ztnw']
+[2024-05-27T10:37:49.972+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=204) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-05-27T10:37:50.004+0000] {standard_task_runner.py:91} INFO - Job 5: Subtask load_task
+[2024-05-27T10:37:50.005+0000] {standard_task_runner.py:63} INFO - Started process 213 to run task
+[2024-05-27T10:37:51.228+0000] {task_command.py:426} INFO - Running <TaskInstance: entity_match_dag.load_task scheduled__2023-01-01T00:00:00+00:00 [running]> on host b29fb724185a
+[2024-05-27T10:37:51.725+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='entity_match_dag' AIRFLOW_CTX_TASK_ID='load_task' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T00:00:00+00:00'
+[2024-05-27T10:37:51.727+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-27T10:37:52.083+0000] {python.py:237} INFO - Done. Returned value was: [    Customer Code  ... Mobile Number
+0        21216874  ...    1234567890
+1        22359363  ...    2345678901
+2        33485241  ...    3456789012
+3        45475489  ...    4567890123
+4        56562139  ...    5678901234
+5        67698214  ...    6789012345
+6        78714635  ...    7890123456
+7        89847326  ...    8901234567
+8        91953421  ...    9012345678
+9        10203847  ...     123456789
+10       12113982  ...    1234567800
+11       13122547  ...    2345678902
+12       13235698  ...    3456789013
+13       14247652  ...    4567890124
+14       15158964  ...    5678901235
+15       16169853  ...    6789012346
+16       17375246  ...    7890123457
+17       18383569  ...    8901234568
+18       19294258  ...    9012345679
+19       20305417  ...     123456790
+
+[20 rows x 9 columns],     Customer_ID             Name  ...  Gender  PAN_Number
+0    1234567890        Ram Thapa  ...    Male  ABCDE1234F
+1    2345678901    Sita Shrestha  ...  Female  FGHIJ5678K
+2    3456789012      Hari Gurung  ...    Male  LMNOP9012L
+3    4567890123      Gita Tamang  ...  Female  QRSTU3456M
+4    5678901234       Mohan Lama  ...    Male  VWXYZ7890N
+5    6789012345      Radha Magar  ...  Female  ABCD1234PQ
+6    7890123456      Krishna Rai  ...    Male  EFGH5678RS
+7    8901234567    Sarita Sherpa  ...  Female  TUVW9012XY
+8    9012345678     Bikash Karki  ...    Male  ZABC3456DE
+9     123456789   Nisha Bhandari  ...  Female  FGHI7890JK
+10   1234567800   Aarav Adhikari  ...    Male  LMNO1234PL
+11   2345678902      Sneha Joshi  ...  Female  QRST5678UM
+12   3456789013     Pratik Shahi  ...    Male  VWXY9012NZ
+13   4567890124   Anju Bhattarai  ...  Female  ABCD3456OP
+14   5678901235  Manish Maharjan  ...    Male  EFGH7890QR
+15   6789012346          Puja KC  ...  Female  STUV1234WX
+16   7890123457      Anil Khadka  ...    Male  YZAB5678CD
+17   8901234568       Rita Rimal  ...  Female  EFGH9012EF
+18   9012345679  Pratiksha Dahal  ...    Male  IJKL3456GH
+19    123456790  Dipesh Pokharel  ...  Female  MNOP7890IJ
+
+[20 rows x 6 columns],     votersID       votersName  ...   Gender Date of Birth
+0   11116874        Ram Thapa  ...     Male    1990-01-01
+1   22259363    Sita Shrestha  ...   Female    1991-02-02
+2   33385241      Hari Gurung  ...     Male    1992-03-03
+3   44475489      Gita Tamang  ...   Female    1993-04-04
+4   55562139       Mohan Lama  ...     Male    1994-05-05
+5   66698214      Radha Magar  ...   Female    1995-06-06
+6   77714635      Krishna Rai  ...     Male    1996-07-07
+7   88847326    Sarita Sherpa  ...   Female    1997-08-08
+8   99953421     Bikash Karki  ...     Male    1998-09-09
+9   10103847   Nisha Bhandari  ...   Female    1999-10-10
+10  11113982   Aarav Adhikari  ...     Male    2000-11-11
+11  12122547      Sneha Joshi  ...   Female    2001-12-12
+12  13135698     Pratik Shahi  ...     Male    1989-01-13
+13  14147652   Anju Bhattarai  ...   Female    1988-02-14
+14  15158963  Manish Maharjan  ...     Male    1987-03-15
+15  16169852          Puja KC  ...   Female    1986-04-16
+16  17175246      Anil Khadka  ...     Male    1985-05-17
+17  18183569       Rita Rimal  ...   Female    1984-06-18
+18  19194258  Pratiksha Dahal  ...     Male    1983-07-19
+19  20205417  Dipesh Pokharel  ...   Female    1982-08-20
+
+[20 rows x 9 columns],                Name  Mobile Number  ...  Date of Birth              Father_Name
+0         Ram Thapa     1234567890  ...     1990-01-01        Ram Bahadur Thapa
+1     Sita Shrestha     2345678901  ...     1991-02-02     Hari Prasad Shrestha
+2       Hari Gurung     3456789012  ...     1992-03-03     Gopal Krishna Gurung
+3       Gita Tamang     4567890123  ...     1993-04-04         Shyam Lal Tamang
+4        Mohan Lama     5678901234  ...     1994-05-05         Krishna Raj Lama
+5       Radha Magar     6789012345  ...     1995-06-06      Narayan Kumar Magar
+6       Krishna Rai     7890123456  ...     1996-07-07      Govinda Bahadur Rai
+7     Sarita Sherpa     8901234567  ...     1997-08-08     Shiva Narayan Sherpa
+8      Bikash Karki     9012345678  ...     1998-09-09  Bhagirath Bahadur Karki
+9    Nisha Bhandari      123456789  ...     1999-10-10   Surya Bahadur Bhandari
+10   Aarav Adhikari     1234567800  ...     2000-11-11   Rajan Bahadur Adhikari
+11      Sneha Joshi     2345678902  ...     2001-12-12     Ramesh Bahadur Joshi
+12     Pratik Shahi     3456789013  ...     1989-01-13       Suresh Kumar Shahi
+13   Anju Bhattarai     4567890124  ...     1988-02-14     Dinesh Raj Bhattarai
+14  Manish Maharjan     5678901235  ...     1987-03-15   Bijay Bahadur Maharjan
+15          Puja KC     6789012346  ...     1986-04-16        Ramesh Bahadur KC
+16      Anil Khadka     7890123457  ...     1985-05-17    Rajesh Bahadur Khadka
+17       Rita Rimal     8901234568  ...     1984-06-18     Ganesh Bahadur Rimal
+18  Pratiksha Dahal     9012345679  ...     1983-07-19    Santosh Bahadur Dahal
+19  Dipesh Pokharel      123456790  ...     1982-08-20    Shyam Sundar Pokharel
+
+[20 rows x 6 columns],     License Number Blood Group  ...                Temporary_Address  Date of Birth
+0   15-05-58353205         AB+  ...        Gongabu, Kathmandu, Nepal     1990-01-01
+1   21-08-00435579         AB-  ...         New Road, Pokhara, Nepal     1991-02-02
+2   93-12-35351480          B-  ...        Pulchowk, Lalitpur, Nepal     1992-03-03
+3   65-03-68139881          A-  ...       Bagbazar, Kathmandu, Nepal     1993-04-04
+4   14-11-40056582          A+  ...       Balkumari, Lalitpur, Nepal            NaN
+5   82-09-81734599          B-  ...       Chabahil, Kathmandu, Nepal     1995-06-06
+6   26-03-50185868         AB+  ...      Kumaripati, Lalitpur, Nepal            NaN
+7   98-03-72394228          A-  ...  New Baneshwor, Kathmandu, Nepal     1997-08-08
+8   68-01-80388982          B-  ...         Boudha, Kathmandu, Nepal            NaN
+9   42-08-02614125          A-  ...        Kalanki, Kathmandu, Nepal     1999-10-10
+10  15-06-41273848          O+  ...          Sanepa, Lalitpur, Nepal     2000-11-11
+11  31-01-32329238         AB+  ...    Putalisadak, Kathmandu, Nepal     2001-12-12
+12  73-02-11496212          O-  ...        Tinkune, Kathmandu, Nepal     1989-01-13
+13  94-08-09289547         AB-  ...     Sinamangal, Kathmandu, Nepal     1988-02-14
+14  98-09-16879291          B+  ...         Thamel, Kathmandu, Nepal            NaN
+15  17-11-63791321         AB-  ...      Jawalakhel, Lalitpur, Nepal     1986-04-16
+16  71-03-35575299         AB-  ...      Maitighar, Kathmandu, Nepal            NaN
+17  68-10-56792613          B-  ...    Buddhanagar, Kathmandu, Nepal     1984-06-18
+18  28-09-97969690         AB+  ...          Naxal, Kathmandu, Nepal     1983-07-19
+19  89-04-95690392          A-  ...       Gaushala, Kathmandu, Nepal            NaN
+
+[20 rows x 9 columns]]
+[2024-05-27T10:37:52.235+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-27T10:37:52.693+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=entity_match_dag, task_id=load_task, run_id=scheduled__2023-01-01T00:00:00+00:00, execution_date=20230101T000000, start_date=20240527T103749, end_date=20240527T103752
+[2024-05-27T10:37:52.761+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-27T10:37:52.800+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-27T10:37:52.806+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

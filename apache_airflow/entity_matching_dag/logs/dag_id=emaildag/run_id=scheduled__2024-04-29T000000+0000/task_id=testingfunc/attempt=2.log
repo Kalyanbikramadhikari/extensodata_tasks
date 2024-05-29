@@ -1,0 +1,20 @@
+[2024-05-04T11:50:16.869+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-04T11:50:17.278+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: emaildag.testingfunc scheduled__2024-04-29T00:00:00+00:00 [queued]>
+[2024-05-04T11:50:17.396+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: emaildag.testingfunc scheduled__2024-04-29T00:00:00+00:00 [queued]>
+[2024-05-04T11:50:17.511+0000] {taskinstance.py:2303} INFO - Starting attempt 2 of 2
+[2024-05-04T11:50:18.045+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): testingfunc> on 2024-04-29 00:00:00+00:00
+[2024-05-04T11:50:18.204+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=569) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-04T11:50:18.196+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'emaildag', 'testingfunc', 'scheduled__2024-04-29T00:00:00+00:00', '--job-id', '49', '--raw', '--subdir', 'DAGS_FOLDER/emaildag.py', '--cfg-path', '/tmp/tmpnn_qlspn']
+[2024-05-04T11:50:18.218+0000] {standard_task_runner.py:63} INFO - Started process 592 to run task
+[2024-05-04T11:50:18.217+0000] {standard_task_runner.py:91} INFO - Job 49: Subtask testingfunc
+[2024-05-04T11:50:28.299+0000] {cli_action_loggers.py:137} WARNING - Failed to log action (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-05-04T11:50:56.055+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 49 for task testingfunc ((psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 592)
+[2024-05-04T11:51:35.435+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-05-04T11:51:35.652+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-04T11:51:35.713+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

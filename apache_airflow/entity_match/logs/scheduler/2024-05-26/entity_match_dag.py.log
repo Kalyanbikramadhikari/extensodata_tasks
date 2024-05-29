@@ -1,0 +1,50 @@
+[2024-05-26T05:30:34.527+0000] {processor.py:161} INFO - Started process (PID=176) to work on /opt/airflow/dags/entity_match_dag.py
+[2024-05-26T05:30:34.544+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/entity_match_dag.py for tasks to queue
+[2024-05-26T05:30:34.573+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:30:34.572+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/entity_match_dag.py
+[2024-05-26T05:30:49.991+0000] {processor.py:840} INFO - DAG(s) 'entity_match_dag' retrieved from /opt/airflow/dags/entity_match_dag.py
+[2024-05-26T05:30:52.593+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:30:52.584+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:entity_match_dag
+[2024-05-26T05:30:52.640+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:30:52.639+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:entity_match_dag
+[2024-05-26T05:30:52.692+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:30:52.691+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:entity_match_dag
+[2024-05-26T05:30:52.700+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:30:52.698+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-26T05:30:52.763+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:30:52.761+0000] {dag.py:3118} INFO - Creating ORM DAG for entity_match_dag
+[2024-05-26T05:30:52.803+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:30:52.803+0000] {dag.py:3954} INFO - Setting next_dagrun for entity_match_dag to 2023-01-01 00:00:00+00:00, run_after=2023-01-01 00:00:00+00:00
+[2024-05-26T05:30:52.921+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/entity_match_dag.py took 18.457 seconds
+[2024-05-26T05:31:24.013+0000] {processor.py:161} INFO - Started process (PID=196) to work on /opt/airflow/dags/entity_match_dag.py
+[2024-05-26T05:31:24.024+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/entity_match_dag.py for tasks to queue
+[2024-05-26T05:31:24.038+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:31:24.037+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/entity_match_dag.py
+[2024-05-26T05:31:39.741+0000] {processor.py:840} INFO - DAG(s) 'entity_match_dag' retrieved from /opt/airflow/dags/entity_match_dag.py
+[2024-05-26T05:31:39.904+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:31:39.894+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-26T05:31:40.024+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:31:40.024+0000] {dag.py:3954} INFO - Setting next_dagrun for entity_match_dag to 2023-01-01 00:00:00+00:00, run_after=2023-01-01 00:00:00+00:00
+[2024-05-26T05:31:40.121+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/entity_match_dag.py took 16.142 seconds
+[2024-05-26T05:32:10.739+0000] {processor.py:161} INFO - Started process (PID=220) to work on /opt/airflow/dags/entity_match_dag.py
+[2024-05-26T05:32:10.744+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/entity_match_dag.py for tasks to queue
+[2024-05-26T05:32:10.752+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:32:10.751+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/entity_match_dag.py
+[2024-05-26T05:32:19.442+0000] {processor.py:840} INFO - DAG(s) 'entity_match_dag' retrieved from /opt/airflow/dags/entity_match_dag.py
+[2024-05-26T05:32:20.003+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:32:20.003+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-26T05:32:20.035+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:32:20.033+0000] {dag.py:3954} INFO - Setting next_dagrun for entity_match_dag to 2023-01-01 00:00:00+00:00, run_after=2023-01-01 00:00:00+00:00
+[2024-05-26T05:32:20.499+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/entity_match_dag.py took 9.795 seconds
+[2024-05-26T05:32:51.714+0000] {processor.py:161} INFO - Started process (PID=238) to work on /opt/airflow/dags/entity_match_dag.py
+[2024-05-26T05:32:52.609+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/entity_match_dag.py for tasks to queue
+[2024-05-26T05:32:52.631+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:32:52.623+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/entity_match_dag.py
+[2024-05-26T05:33:05.723+0000] {processor.py:840} INFO - DAG(s) 'entity_match_dag' retrieved from /opt/airflow/dags/entity_match_dag.py
+[2024-05-26T05:33:05.840+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:33:05.838+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-26T05:33:05.992+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:33:05.987+0000] {dag.py:3954} INFO - Setting next_dagrun for entity_match_dag to 2023-01-01 00:00:00+00:00, run_after=2023-01-01 00:00:00+00:00
+[2024-05-26T05:33:06.123+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/entity_match_dag.py took 14.432 seconds
+[2024-05-26T05:33:36.905+0000] {processor.py:161} INFO - Started process (PID=257) to work on /opt/airflow/dags/entity_match_dag.py
+[2024-05-26T05:33:36.911+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/entity_match_dag.py for tasks to queue
+[2024-05-26T05:33:36.918+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:33:36.916+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/entity_match_dag.py
+[2024-05-26T05:33:39.266+0000] {processor.py:840} INFO - DAG(s) 'entity_match_dag' retrieved from /opt/airflow/dags/entity_match_dag.py
+[2024-05-26T05:33:39.327+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:33:39.326+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-26T05:33:39.373+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:33:39.372+0000] {dag.py:3954} INFO - Setting next_dagrun for entity_match_dag to 2023-01-01 00:00:00+00:00, run_after=2023-01-01 00:00:00+00:00
+[2024-05-26T05:33:39.470+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/entity_match_dag.py took 2.581 seconds
+[2024-05-26T05:34:09.970+0000] {processor.py:161} INFO - Started process (PID=281) to work on /opt/airflow/dags/entity_match_dag.py
+[2024-05-26T05:34:09.986+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/entity_match_dag.py for tasks to queue
+[2024-05-26T05:34:09.994+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:34:09.992+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/entity_match_dag.py
+[2024-05-26T05:34:14.431+0000] {processor.py:840} INFO - DAG(s) 'entity_match_dag' retrieved from /opt/airflow/dags/entity_match_dag.py
+[2024-05-26T05:34:14.538+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:34:14.536+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-26T05:34:14.599+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:34:14.599+0000] {dag.py:3954} INFO - Setting next_dagrun for entity_match_dag to 2023-01-01 00:00:00+00:00, run_after=2023-01-01 00:00:00+00:00
+[2024-05-26T05:34:14.662+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/entity_match_dag.py took 4.746 seconds
+[2024-05-26T05:34:48.500+0000] {processor.py:161} INFO - Started process (PID=300) to work on /opt/airflow/dags/entity_match_dag.py
+[2024-05-26T05:34:49.244+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/entity_match_dag.py for tasks to queue
+[2024-05-26T05:34:49.259+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:34:49.258+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/entity_match_dag.py
+[2024-05-26T05:35:19.522+0000] {logging_mixin.py:188} INFO - [2024-05-26T05:35:19.519+0000] {timeout.py:68} ERROR - Process timed out, PID: 300

@@ -1,0 +1,21 @@
+[2024-05-08T03:26:02.552+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-08T03:26:04.226+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: emaildag.testingfunc scheduled__2024-05-05T00:00:00+00:00 [queued]>
+[2024-05-08T03:26:04.492+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: emaildag.testingfunc scheduled__2024-05-05T00:00:00+00:00 [queued]>
+[2024-05-08T03:26:04.507+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2024-05-08T03:26:06.186+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): testingfunc> on 2024-05-05 00:00:00+00:00
+[2024-05-08T03:26:06.324+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=55) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-08T03:26:06.348+0000] {standard_task_runner.py:63} INFO - Started process 74 to run task
+[2024-05-08T03:26:06.360+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'emaildag', 'testingfunc', 'scheduled__2024-05-05T00:00:00+00:00', '--job-id', '129', '--raw', '--subdir', 'DAGS_FOLDER/emaildag.py', '--cfg-path', '/tmp/tmpud20br8n']
+[2024-05-08T03:26:06.400+0000] {standard_task_runner.py:91} INFO - Job 129: Subtask testingfunc
+[2024-05-08T03:26:07.382+0000] {task_command.py:426} INFO - Running <TaskInstance: emaildag.testingfunc scheduled__2024-05-05T00:00:00+00:00 [running]> on host e2bc3a9510f6
+[2024-05-08T03:26:10.889+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='kalyanad100@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='emaildag' AIRFLOW_CTX_TASK_ID='testingfunc' AIRFLOW_CTX_EXECUTION_DATE='2024-05-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-05T00:00:00+00:00'
+[2024-05-08T03:26:10.971+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-08T03:26:11.019+0000] {logging_mixin.py:188} INFO - task started
+[2024-05-08T03:26:11.083+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-08T03:26:11.117+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-08T03:26:11.164+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=emaildag, task_id=testingfunc, execution_date=20240505T000000, start_date=20240508T032604, end_date=20240508T032611
+[2024-05-08T03:26:11.623+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-08T03:26:11.919+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-08T03:26:11.996+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

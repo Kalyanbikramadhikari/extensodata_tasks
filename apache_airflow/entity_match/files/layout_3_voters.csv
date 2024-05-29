@@ -1,0 +1,21 @@
+votersID,votersName,votersAge,votersFatherName,votersMotherName,SpouseName,Permanent_Adress, Gender,Date of Birth
+11116874,Ram Thapa,45,Ram Bahadur Thapa,Laxmi Thapa,Sita Thapa,"Baluwatar, Kathmandu, Nepal", Male,1990-01-01
+22259363,Sita Shrestha,38,Hari Prasad Shrestha,Radha Sharma,Ravi Sharma,"Lakeside, Pokhara, Nepal", Female,1991-02-02
+33385241,Hari Gurung,52,Gopal Krishna Gurung,Gita Adhikari,Maya Adhikari,"Chitwan National Park, Chitwan, Nepal", Male,1992-03-03
+44475489,Gita Tamang,30,Shyam Lal Tamang,Mina Rai,Surya Rai,"Biratnagar, Morang, Nepal", Female,1993-04-04
+55562139,Mohan Lama,27,Krishna Raj Lama,Kalpana Karki,Sarita Karki,"Bharatpur, Chitwan, Nepal", Male,1994-05-05
+66698214,Radha Magar,41,Narayan Kumar Magar,Nima Gurung,Pemba Gurung,"Butwal, Rupandehi, Nepal", Female,1995-06-06
+77714635,Krishna Rai,36,Govinda Bahadur Rai,Saru Shrestha,Laxmi Shrestha,"Hetauda, Makwanpur, Nepal", Male,1996-07-07
+88847326,Sarita Sherpa,50,Shiva Narayan Sherpa,Nanu Maharjan,Raj Maharjan,"Janakpur, Dhanusa, Nepal", Female,1997-08-08
+99953421,Bikash Karki,43,Bhagirath Bahadur Karki,Lhamu Tamang,Pema Tamang,"Nepalgunj, Banke, Nepal", Male,1998-09-09
+10103847,Nisha Bhandari,34,Surya Bahadur Bhandari,Lila KC,Manish KC,"Dharan, Sunsari, Nepal", Female,1999-10-10
+11113982,Aarav Adhikari,39,Rajan Bahadur Adhikari,Chandra Khadka,Nisha Khadka,"Birtamode, Jhapa, Nepal", Male,2000-11-11
+12122547,Sneha Joshi,48,Ramesh Bahadur Joshi,Tulasa Magar,Kamal Magar,"Dhangadhi, Kailali, Nepal", Female,2001-12-12
+13135698,Pratik Shahi,31,Suresh Kumar Shahi,Ganga Yadav,Sita Yadav,"Itahari, Sunsari, Nepal", Male,1989-01-13
+14147652,Anju Bhattarai,29,Dinesh Raj Bhattarai,Sunita Bista,Mina Bista,"Bhaktapur, Bhaktapur, Nepal", Female,1988-02-14
+15158963,Manish Maharjan,44,Bijay Bahadur Maharjan,Gita Dhakal,Ram Dhakal,"Kirtipur, Kathmandu, Nepal", Male,1987-03-15
+16169852,Puja KC,53,Ramesh Bahadur KC,Laxmi Pant,Radha Pant,"Lalitpur, Lalitpur, Nepal", Female,1986-04-16
+17175246,Anil Khadka,37,Rajesh Bahadur Khadka,Sarita Joshi,Amit Joshi,"Ghorahi, Dang, Nepal", Male,1985-05-17
+18183569,Rita Rimal,28,Ganesh Bahadur Rimal,Meena Bhattarai,Anita Bhattarai,"Tansen, Palpa, Nepal", Female,1984-06-18
+19194258,Pratiksha Dahal,46,Santosh Bahadur Dahal,Manju Gurung,Sanu Gurung,"Bidur, Nuwakot, Nepal", Male,1983-07-19
+20205417,Dipesh Pokharel,40,Shyam Sundar Pokharel,Rita Lama,Hari Lama,"Damak, Jhapa, Nepal", Female,1982-08-20

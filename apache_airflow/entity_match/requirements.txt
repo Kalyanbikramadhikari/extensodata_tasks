@@ -1,0 +1,5 @@
+hdfs==2.7.3
+scikit-learn==1.4.2
+pandas==2.2.2
+numpy==1.26.4
+Levenshtein==0.25.1
