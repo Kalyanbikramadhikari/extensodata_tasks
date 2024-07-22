@@ -23,8 +23,8 @@ CALL SelectAllEmployee();
 DELIMITER //
 
 CREATE PROCEDURE getEmployeeBySalary(IN salaryfilter INT )
--- The IN keyword tells the database that the parameter will be passed by the calling
--- is an arbitrary name for the parameter.
+--  The IN keyword tells the database that the parameter will be passed by the calling
+--  salaryfilter is an arbitrary name for the parameter.
 --  int  is the datatype. it is the datatype for command after where statement below
  
 BEGIN
